@@ -1,0 +1,23 @@
+.wrap--kitchenSection{
+    background-color: var(--color-textAlt);
+    /* border: 2px solid red; */
+   
+}
+
+
+.wrap--kitchen{
+    border: 2px solid var(--color-textAlt);
+    margin: 4rem 13rem;
+    color: black;
+}
+.kitchenSection{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2.4rem;
+}
+
+.wrap--kitchen h2{
+    margin-top: 4rem;
+    font-weight: 800;
+    font-size: 4rem;
+}
