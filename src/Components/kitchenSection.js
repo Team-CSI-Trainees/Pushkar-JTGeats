@@ -1,7 +1,6 @@
 import './kitchenSection.css';
 import React from 'react';
-import FoodCard from './foodCard';
-
+import data from './imageData'
 
 function KitchenSection(){
     
@@ -12,19 +11,7 @@ function KitchenSection(){
             <div className='wrap--kitchen'>
                 <h2>Home Kitchen</h2>
                 <div className='kitchenSection'>
-                    {/* {imageData} */}
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
-                    <FoodCard />
+                    {data}
                 </div>
             </div>
         </div>

@@ -15,8 +15,8 @@ function NavBar(){
                 <a href="#contact"><span className='noRightMargin'>Contact</span></a>
             </div>
             <div className='list'>
-                <span> <img src={search} alt='search' className='searchIcon'></img></span>
-                <span><img src={Card} alt='shop' className='shopIcon noRightMargin'></img></span>
+                <span> <img src={search} alt='search' className='iconHeader searchIcon'></img></span>
+                <span><img src={Card} alt='shop' className='iconHeader shopIcon noRightMargin'></img></span>
             </div>
         </div>
     );

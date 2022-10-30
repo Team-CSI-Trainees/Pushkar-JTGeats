@@ -2,9 +2,8 @@ import './inputBox.css'
 
 
 function InputBox(props){
-
 return(
-<input type='text' className='inputBox' placeholder={props.text} />
+<input type='text' className= {props.class} placeholder={props.text} />
 );
 }
 

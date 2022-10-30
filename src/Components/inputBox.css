@@ -1,15 +1,24 @@
-.inputBox{
+input{
     padding: 1.9rem 2.2rem;
     margin-top: 2rem;
     border: 0px solid white;
     border-radius: 10px ;
-    border-right: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
     width: 40%;
     /* outline: blue; */
 }
 ::placeholder{
     font-weight: lighter;
     color: #9a9999;
+}
+
+.inputBoxLanding{
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+}
+
+.inputBoxContact{
+    margin: 1rem;
+    margin-left: 0;
 }

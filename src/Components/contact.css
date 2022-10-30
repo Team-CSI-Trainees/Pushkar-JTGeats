@@ -1,0 +1,40 @@
+.wrap--contact{
+    display: flex;
+    margin: 10rem 13rem 5rem 13rem;
+}
+
+
+
+
+.contact{
+    color:black;
+}
+
+/* Input box */
+.contactHeading{
+    font-size: 2rem;
+    width: 50%;
+    font-weight: 400;
+}
+
+.contactSubHeading{
+    font-weight: 400;
+
+}
+
+.contactMessage{
+    padding: 1.9rem 2.2rem;
+    margin-top: 2rem;
+    border: 0px solid white;
+    border-radius: 10px ;
+    
+    width: 88%;
+}
+
+
+/* Delivery Guy */
+.contactDeliveryGuy img{
+    margin-top: 2rem;
+    padding-left: 2rem;
+    width: 90%;
+}

@@ -1,4 +1,9 @@
-.navBar{
+
+.footerBar{
+    background-color: var(--color-header);
+    padding-bottom: 2rem ;
+    color: black;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,6 +13,13 @@
     /* background: var(--color-header); */
     font-size: 1.8rem;
 }
+hr{
+    width: 85%;
+    padding: 0 auto;   
+    background-color: var(--color-text);
+    height: 0.1px;
+}
+
 .list{
     text-align: center;
     display: flex;
@@ -19,24 +31,22 @@
     text-decoration: none;
     justify-content: center;
 }
-
+/* Logo */
 .wrapLogo img{
     width: 8.9rem;
-    /* height: 110%; */
 }
 
-.searchIcon , .shopIcon{
-    margin-right: 2vw;
-}
+
 .noRightMargin{
     margin-right: 0;
 }
-.leftMargin{
-    margin-left: 5vw ;
+
+.iconFooter{
+    background: var(--color-text);
+    margin-right: 1vw;
+    padding: 0.6rem;
+    border-radius:5px ;
 }
-
-
-/* media queries */
-/* @media screen and (min-width:){ */
-    
-/* } */
+.fb{
+    padding: 0.6rem 1rem;
+}

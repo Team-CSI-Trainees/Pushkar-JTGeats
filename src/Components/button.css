@@ -1,12 +1,19 @@
 button{
     padding: 1.9rem 2.2rem;
-    border: 0px solid white;
+    color: var(--color-text);
     border-radius: 10px ;
+}
+.accent{
+    border: 0px solid white;
     border-left: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    color: var(--color-text);
-}
-.accent{
     background: var(--color-accent);
+}
+.green{
+    background-color: var(--color-header);
+    border: 0px solid white;
+    width: 20rem;
+    margin: 2rem;
+    margin-left: 0;
 }
