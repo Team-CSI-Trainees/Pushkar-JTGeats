@@ -18,9 +18,9 @@ function Footer(){
         <a href="#contact"><span className='noRightMargin'>Contact</span></a>
     </div>
     
-    <div className='list'>
-        <span><img src={fb} alt='shop' className='iconFooter fb noRightMargin'></img></span>
-        <span><img src={insta} alt='shop' className='iconFooter'></img></span>
+    <div className='footerList'>
+        <a href=""><span><img src={fb} alt='shop' className='iconFooter fb noRightMargin'></img></span></a>
+        <a href=""><span><img src={insta} alt='shop' className='iconFooter'></img></span></a>
         
     </div>
 </div>

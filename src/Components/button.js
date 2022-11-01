@@ -4,7 +4,7 @@ import './button.css'
 function Button(props){
     const value = props.text;
     return(
-        <button className={props.class}>{value}</button>
+        <button type={props.type} className={props.class}>{value}</button>
     );
 }
 

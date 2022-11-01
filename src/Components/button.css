@@ -2,6 +2,7 @@ button{
     padding: 1.9rem 2.2rem;
     color: var(--color-text);
     border-radius: 10px ;
+    cursor: pointer;
 }
 .accent{
     border: 0px solid white;
@@ -10,10 +11,17 @@ button{
     border-top-left-radius: 0;
     background: var(--color-accent);
 }
+.accent:hover{
+    background-color: #f3900f;
+}
+
 .green{
     background-color: var(--color-header);
     border: 0px solid white;
     width: 20rem;
     margin: 2rem;
     margin-left: 0;
+}
+.green:hover{
+    background-color: var(--color-footer);
 }

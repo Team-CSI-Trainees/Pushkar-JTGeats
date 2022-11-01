@@ -1,0 +1,32 @@
+.wrap--service{
+    color:  black;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+/* Heading */
+.serviceHeading{
+    /* margin-top: 4rem; */
+    font-weight: 700;
+    font-size: 4rem;
+    width: 50%;
+    margin:  4rem auto 0;
+}
+
+/* Content */
+.serviceContent{
+    font-weight: 500;
+    width: 20%;
+    margin: 1rem auto 4rem ;
+    color: grey;
+}
+
+/* Video */
+.wrap--video{
+    background-color: #C7EACC;
+    margin-top: 10%;
+}
+.wrap--video video{
+    position: relative;
+    transform: translateY(-50%);
+}

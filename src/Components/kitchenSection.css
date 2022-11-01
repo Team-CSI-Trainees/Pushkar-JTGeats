@@ -1,13 +1,14 @@
 .wrap--kitchenSection{
     background-color: var(--color-textAlt);
    
+    color: black;
 }
 
 
 .wrap--kitchen{
     border: 2px solid var(--color-textAlt);
     margin: 4rem 13rem;
-    color: black;
+    padding-bottom: 10vh;
 }
 .kitchenSection{
     display: grid;
@@ -15,8 +16,86 @@
     gap: 2.4rem;
 }
 
-.wrap--kitchen h2{
+.wrap--kitchenSection h2{
     margin-top: 4rem;
     font-weight: 800;
     font-size: 4rem;
+}
+
+/* Carausel */
+.carouselHeading{
+    text-align: center;
+}
+
+.wrap--carousel{
+    max-width: 1200;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* -----------------------------Request  Box */
+.wrap--request{
+    background-color: #F7F8FA;
+    width: 90%;
+    border: var(--color-header) 2px solid;
+    margin: auto;
+    border-radius: 15px;
+    z-index: 20;
+}
+
+/* Invisble Request Box */
+.requestInvisible{
+    display: none;
+}
+/* Request Button */
+.wrap--requestBtn button{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    /* width: fit-content; */
+}
+
+/* Request box */
+.requestBox{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* heading */
+.requestHeading{
+    text-align: center;
+    margin-bottom: 10vh;
+    font-weight: 800;
+}
+
+/* Input field  */
+.wrap--requestInput{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+/* Submit Buttons */
+
+.requestBoxBtn{
+    margin: 10vh auto ;
+    display: flex;
+}
+.requestBtn{
+    outline: none;
+    border: none;
+    background-color: var(--color-header);
+    width: 10vw;
+    margin: 1rem;
+}
+.requestBtn:hover{
+    background-color: var(--color-footer);
+}
+.requestBtn:active{
+    background-color: var(--color-textAlt);
+    color: var(--color-header);
 }

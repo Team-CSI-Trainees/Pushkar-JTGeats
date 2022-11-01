@@ -1,11 +1,12 @@
 input{
     padding: 1.9rem 2.2rem;
     margin-top: 2rem;
-    border: 0px solid white;
+    border: 1px solid white;
     border-radius: 10px ;
     width: 40%;
     /* outline: blue; */
 }
+
 ::placeholder{
     font-weight: lighter;
     color: #9a9999;
@@ -21,4 +22,19 @@ input{
 .inputBoxContact{
     margin: 1rem;
     margin-left: 0;
+}
+
+input:focus ,textarea:focus{
+    outline: none;
+    border: var(--color-header) 1px solid;
+}
+
+
+/* Request Box */
+.requestInput{
+    background-color: var(--color-textAlt);
+    width: 90%;
+    margin-bottom: 4vh;
+    margin-top: 0;
+    /* margin: auto; */
 }

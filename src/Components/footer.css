@@ -20,13 +20,13 @@ hr{
     height: 0.1px;
 }
 
-.list{
+.footerList{
     text-align: center;
     display: flex;
 }
-.list a{
+.footerList a{
     color: var(--color-text);
-    margin-right: 4rem ;
+    /* margin-right: 4rem ; */
     font-size: large;
     text-decoration: none;
     justify-content: center;
