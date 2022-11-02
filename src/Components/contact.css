@@ -11,6 +11,10 @@
 }
 
 /* Input box */
+.wrapinput{
+    width: 100%;
+    border: 2px solid red;
+}
 .contactHeading{
     font-size: 2rem;
     width: 50%;
@@ -37,4 +41,26 @@
     margin-top: 2rem;
     padding-left: 2rem;
     width: 90%;
+}
+
+
+
+/* media queries */
+@media screen and (max-width:950px) {
+    .wrap--contact{
+        margin: 8rem 5rem 5rem 5rem;
+    }
+    .contactMessage{
+        width: 60%;
+    }
+}
+@media screen and (max-width:767px) {
+    .wrap--contact{
+        margin: 8rem 7rem 5rem 7rem;
+        flex-direction: column-reverse;
+    }
+    .contactDeliveryGuy{
+        width: 60%;
+        margin: auto;
+    }
 }

@@ -39,6 +39,77 @@
 .iconHeader{
     margin: 0;
 }
+
+
+
+
+
+
+
+
+/*============================= CART */
+.blurBackground{
+    background-color: rgba(255, 255, 255,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 100vh;
+    /* display: none; */
+    width: 100vw;
+}
+.wrap--cart{
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    background-color: #F7F8FA;
+    color: black;
+    width: 90%;
+    height: 80vh;
+    border: var(--color-header) 2px solid;
+    margin: auto;
+    border-radius: 15px;
+    z-index: 100;
+    /* display: none; */
+}
+.wrapCartBox{
+    /* position: relative; */
+    /* top: 50%;
+    left: 30%; */
+    /* transform: translate(25%,10%); */
+    margin: 10vh auto;
+    display: flex;
+    /* border: 2px solid red; */
+    width: 60%;
+    flex-direction: column;
+}
+.wrapCartBox >*{
+    margin: 1rem auto;
+}
+
+/* Invisble Request Box */
+.requestInvisible{
+    display: none;
+}
+
+.emptyCartImage{
+    /* position: relative;
+    top: 40%;
+    left: 36%;
+    transform: translate(50%,-50%); */
+    width: 30%;
+    margin: 1rem auto ;
+}
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 /* @media screen and (min-width:){ */
     

@@ -44,3 +44,32 @@
 .content{
     width: 65%;
 }
+
+
+/* Media queries */
+@media screen and (max-width:980px) {
+    .headingContent{
+        font-size: 5rem;
+    }
+
+}
+@media screen and (max-width:767px) {
+    
+    .landing{
+        flex-direction: column-reverse;
+        margin: 5vh auto 0 auto;
+    }
+    .heroImage{
+        margin: auto;
+    }
+    .heroContent{
+
+        width: 100%;
+    }
+    .headingContent{
+        font-size: 4rem;
+    }
+    .content{
+        width: 80%;
+    }
+}

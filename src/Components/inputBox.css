@@ -12,6 +12,7 @@ input{
     color: #9a9999;
 }
 
+/* Landing */
 .inputBoxLanding{
     border-right: 0;
     border-bottom-right-radius: 0;
@@ -19,6 +20,7 @@ input{
 
 }
 
+/* Contact */
 .inputBoxContact{
     margin: 1rem;
     margin-left: 0;
@@ -34,7 +36,18 @@ input:focus ,textarea:focus{
 .requestInput{
     background-color: var(--color-textAlt);
     width: 90%;
+    margin: auto;
     margin-bottom: 4vh;
     margin-top: 0;
-    /* margin: auto; */
+}
+
+
+@media screen and (max-width:1000px) {
+    input{
+        padding: 1rem 1.6rem;
+    }
+    textarea{
+        padding: 1rem 1.6rem;
+
+    }
 }

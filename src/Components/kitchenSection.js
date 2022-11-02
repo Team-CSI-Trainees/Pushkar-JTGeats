@@ -12,6 +12,18 @@ function KitchenSection(){
     const displayRequestBox=()=>{
         setVisible(true);
     }
+    const cancelRequest=(e)=>{
+        setVisible(false);
+        e.preventDefault();
+    }
+    const submitRequest=(e)=>{
+        // const form = document.getElementsByClassName('requestBox');
+        // const formData = new FormData(form);
+        // for(const [key,value] of formData)
+        //     console.log(key,value);
+        setVisible(false);
+        e.preventDefault();
+    }
 
     return(
         <div className="wrap--kitchenSection">
@@ -35,9 +47,10 @@ function KitchenSection(){
             
 
             {/* REQUESTING A DISH  */}
+            <div className={visible?'blurBackground':''}>
             <section className={visible?'wrap--request':'requestInvisible wrap--request'}>
                 <h2 className='requestHeading'>Request a Dish</h2>
-                <form action="" className='requestBox'>
+                <form action="" className='requestBox' onSubmit={submitRequest}>
                     <div className='wrap--requestInput'>
                         <label>Name*</label>
                         <InputBox text='Enter name of the dish' class='requestInput' />
@@ -47,12 +60,13 @@ function KitchenSection(){
                         <InputBox text='Paste a URL' class='requestInput' />
                     </div>
                     <div class="requestBoxBtn">
-                        <button  className='requestBtn'>Cancel</button>
+                        <button  className='requestBtn' onClick={cancelRequest}>Cancel</button>
                         <button className='requestBtn' type='submit'>Submit Request</button>
                     </div>
                 </form>
                 
             </section>
+            </div>
         </div>
     );
 }

@@ -25,3 +25,15 @@ button{
 .green:hover{
     background-color: var(--color-footer);
 }
+.cartOpenBtn{
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+
+@media screen and (max-width:1000px) {
+    button{
+        padding: 1rem 1.6rem;
+    }
+}

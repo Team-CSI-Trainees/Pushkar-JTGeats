@@ -35,13 +35,27 @@
 
 
 /* -----------------------------Request  Box */
+.blurBackground{
+    /* backdrop-filter: blur(10px); */
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 100vh;
+    width: 100vw;
+}
 .wrap--request{
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
     background-color: #F7F8FA;
     width: 90%;
     border: var(--color-header) 2px solid;
     margin: auto;
     border-radius: 15px;
-    z-index: 20;
+    z-index: 100;
 }
 
 /* Invisble Request Box */
@@ -98,4 +112,38 @@
 .requestBtn:active{
     background-color: var(--color-textAlt);
     color: var(--color-header);
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .kitchenSection{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width:950px) {
+    .kitchenSection{
+        margin: auto 3rem;
+        /* grid-template-columns: auto auto auto; */
+    }
+    .wrap--kitchen{
+        margin: 4rem auto;
+    }
+    .wrap--kitchenSection h2{
+        margin-left: 3rem;
+    }
+    /* carousel */
+    .wrap--carousel{
+        /* margin: auto -2rem; */
+    }
+}
+@media screen and (max-width:767px) {
+    .kitchenSection{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:499px) {
+    .kitchenSection{
+        grid-template-columns: auto;
+    }
 }
