@@ -12,37 +12,11 @@ input{
     color: #9a9999;
 }
 
-/* Landing */
-.inputBoxLanding{
-    border-right: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-
-}
-
-/* Contact */
-.inputBoxContact{
-    margin: 1rem;
-    margin-left: 0;
-}
-
-input:focus ,textarea:focus{
-    outline: none;
-    border: var(--color-header) 1px solid;
-}
 
 
-/* Request Box */
-.requestInput{
-    background-color: var(--color-textAlt);
-    width: 90%;
-    margin: auto;
-    margin-bottom: 4vh;
-    margin-top: 0;
-}
 
 
-@media screen and (max-width:1000px) {
+/* @media screen and (max-width:1000px) {
     input{
         padding: 1rem 1.6rem;
     }
@@ -50,4 +24,4 @@ input:focus ,textarea:focus{
         padding: 1rem 1.6rem;
 
     }
-}
+} */

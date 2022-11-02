@@ -46,6 +46,17 @@
 }
 
 
+/* Landing */
+.inputBoxLanding{
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+}
+
+
+
+
 /* Media queries */
 @media screen and (max-width:980px) {
     .headingContent{

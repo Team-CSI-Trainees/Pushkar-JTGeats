@@ -2,8 +2,9 @@ import './kitchenSection.css';
 import React, { useState } from 'react';
 import data from './imageData'
 import Carousel from './carousel';
-import Button from './button'
 import InputBox from './inputBox'
+// import Footer from './footer'
+// import Button from './button'
 // import FoodCard from './foodCard';
 // import dish1 from '../DishImages/dish1.png';
 
@@ -67,6 +68,7 @@ function KitchenSection(){
                 
             </section>
             </div>
+            {/* <Footer /> */}
         </div>
     );
 }

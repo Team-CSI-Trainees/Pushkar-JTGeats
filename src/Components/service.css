@@ -4,6 +4,11 @@
     margin-top: 20vh;
 }
 
+.serviceText{
+    margin-bottom: 30vh;
+}
+
+
 /* Heading */
 .serviceHeading{
     /* margin-top: 4rem; */
@@ -24,9 +29,29 @@
 /* Video */
 .wrap--video{
     background-color: #C7EACC;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .wrap--video video{
-    position: relative;
+    /* position: relative; */
     transform: translateY(-50%);
+    margin: auto auto;
+    width: auto;
+}
+.video{
+    width: 100%;
+}
+
+/* Play Button */
+.serviceBtn{
+    position: absolute;
+    transform: translate(-650%,-50%);
+    margin: auto auto;
+    z-index: 5;
+    border-radius: 50%;
+    padding: 1rem 0 1rem 0.8rem;
+    width: 5rem;
+
+}
+.invisiblePlayerBtn{
+    display: none;
 }

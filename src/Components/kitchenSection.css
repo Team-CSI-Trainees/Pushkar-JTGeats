@@ -35,17 +35,7 @@
 
 
 /* -----------------------------Request  Box */
-.blurBackground{
-    /* backdrop-filter: blur(10px); */
-    /* background-color: white; */
-    background-color: rgba(255, 255, 255,0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    height: 100vh;
-    width: 100vw;
-}
+
 .wrap--request{
     position: fixed;
     top: 10vh;
@@ -55,7 +45,7 @@
     border: var(--color-header) 2px solid;
     margin: auto;
     border-radius: 15px;
-    z-index: 100;
+    z-index: 1000;
 }
 
 /* Invisble Request Box */
@@ -93,6 +83,16 @@
     flex-direction: column;
     /* border: 2px solid red; */
 }
+
+/* Request Box */
+.requestInput{
+    background-color: var(--color-textAlt);
+    width: 95%;
+    /* margin: auto; */
+    margin-bottom: 4vh;
+    margin-top: 1vh;
+}
+
 /* Submit Buttons */
 
 .requestBoxBtn{
