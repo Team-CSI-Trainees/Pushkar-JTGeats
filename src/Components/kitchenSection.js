@@ -42,7 +42,7 @@ function KitchenSection(){
                             {data}
                         </Carousel>
                     </div>
-                    {/* <div class="wrap--requestBtn"><Button class='green' text='Request a dish'/></div> */}
+                    
                     <div class="wrap--requestBtn"><button className='green' onClick={displayRequestBox} >Request a dish</button></div>
                 </div>
             

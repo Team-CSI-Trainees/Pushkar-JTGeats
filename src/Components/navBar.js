@@ -31,12 +31,16 @@ function NavBar(){
             
             <div className={visibleCart?'blurBackground':'requestInvisible'}>
                 <section className={visibleCart?'wrap--cart':'requestInvisible wrap--cart'}>
-                    <div class="wrapCartBox">
-                        <img src={emptyCartImage} alt='cart empty' className='emptyCartImage' />
-                        <h3>Cart is Empty</h3>
-                        <p>Add some items to the cart to checkout</p>
-                        <button className='green' onClick={returnToMenu}>Back to Menu</button>
+                    <div className="wrapCartBox">
+                        <div className="wrap--emptyCart">
+                            <img src={emptyCartImage} alt='cart empty' className='emptyCartImage' />
+                            <h3>Cart is Empty</h3>
+                            <p>Add some items to the cart to checkout</p>
+                            <button className='green' onClick={returnToMenu}>Back to Menu</button>
+                        </div>
+                        
                     </div>
+
                     
                 </section>
             </div>

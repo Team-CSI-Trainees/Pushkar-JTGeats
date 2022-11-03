@@ -16,7 +16,7 @@ input{
 
 
 
-/* @media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) {
     input{
         padding: 1rem 1.6rem;
     }
@@ -24,4 +24,4 @@ input{
         padding: 1rem 1.6rem;
 
     }
-} */
+}

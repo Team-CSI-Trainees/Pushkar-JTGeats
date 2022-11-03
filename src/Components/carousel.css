@@ -46,9 +46,7 @@
 .carousel-content.show-3 > * {
     width: calc(100% / 3);
 }
-.carousel-content.show-2 >*{
-    width: calc(100%/2);
-}
+
 
 /* ... */
 
@@ -87,3 +85,13 @@
 
 
 
+@media screen and (max-width:800px) {
+    .carousel-content.show-3 >*{
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width:570px) {
+    .carousel-content.show-3 >*{
+        width: calc(100%);
+    }
+}

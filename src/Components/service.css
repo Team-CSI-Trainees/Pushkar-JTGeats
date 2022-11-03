@@ -1,11 +1,15 @@
 .wrap--service{
     color:  black;
     text-align: center;
-    margin-top: 20vh;
+    /* height: 70rem; */
+    /* margin-top: 20vh; */
+    /* height: max-content; */
+    /* border: 2px solid red; */
+    /* display: block; */
 }
 
 .serviceText{
-    margin-bottom: 30vh;
+    margin-bottom: 24vh;
 }
 
 
@@ -22,31 +26,35 @@
 .serviceContent{
     font-weight: 500;
     width: 20%;
-    margin: 1rem auto 4rem ;
+    margin: 1rem auto  ;
     color: grey;
 }
 
 /* Video */
 .wrap--video{
     background-color: #C7EACC;
-    margin-top: 20%;
-}
-.wrap--video video{
-    /* position: relative; */
-    transform: translateY(-50%);
-    margin: auto auto;
-    width: auto;
+    /* margin-top: 20%; */
+    /* position:absolute; */
+    width: 100%;
 }
 .video{
-    width: 100%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 /* Play Button */
-.serviceBtn{
-    position: absolute;
-    transform: translate(-650%,-50%);
-    margin: auto auto;
+
+.wrap--videoPlayBtn{
+    height: 10vh;
+    /* border: 2px solid red; */
     z-index: 5;
+}
+.serviceBtn{
+    position: relative; 
+    z-index: 5;
+    transform: translateY(5vh); 
+    margin: auto auto;
     border-radius: 50%;
     padding: 1rem 0 1rem 0.8rem;
     width: 5rem;
@@ -54,4 +62,40 @@
 }
 .invisiblePlayerBtn{
     display: none;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:1050px) {
+    .serviceText{
+        margin-bottom: 18vh;
+    }
+    .serviceHeading{
+        width: 70%;
+    }
+    .serviceContent{
+        width: 80%;
+    }
+}
+@media screen and (max-width:700px) {
+    .serviceText{
+        margin-bottom: 10vh;
+    }
+    .serviceHeading{
+        width: 90%;
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    .serviceText{
+        margin-bottom: 10vh;
+    }
+    .serviceHeading{
+        width: 90%;
+        font-size: 2rem;
+    }
+    
 }

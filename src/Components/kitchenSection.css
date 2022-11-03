@@ -1,6 +1,6 @@
 .wrap--kitchenSection{
     background-color: var(--color-textAlt);
-   
+    padding-bottom: 3rem;
     color: black;
 }
 

@@ -22,9 +22,9 @@ function App(){
             </BrowserRouter> */}
         
             {/* <NavBar /> */}
-            {/* <Landing /> */}
-            {/* <KitchenSection /> */}
-            {/* <Service /> */}
+            <Landing />
+            <KitchenSection />
+            <Service />
             <Contact />
             <Footer />
         </div>;
