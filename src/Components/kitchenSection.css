@@ -4,7 +4,6 @@
     color: black;
 }
 
-
 .wrap--kitchen{
     border: 2px solid var(--color-textAlt);
     margin: 4rem 13rem;
@@ -103,7 +102,7 @@
     outline: none;
     border: none;
     background-color: var(--color-header);
-    width: 10vw;
+    min-width: 10vw;
     margin: 1rem;
 }
 .requestBtn:hover{
@@ -134,12 +133,15 @@
     }
     /* carousel */
     .wrap--carousel{
-        /* margin: auto -2rem; */
+        margin: auto auto auto -2rem;
     }
 }
 @media screen and (max-width:767px) {
     .kitchenSection{
         grid-template-columns: auto auto;
+    }
+    .requestBoxBtn{
+        flex-direction: column;
     }
 }
 @media screen and (max-width:499px) {

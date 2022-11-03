@@ -28,8 +28,8 @@ return(
             <p className='serviceContent'>Away from home and craving the tasty homemade recipes? 
             Choose from a selection of our delicious home cooked dishes </p>
         </div>
-             <div class="wrap--videoPlayBtn"><button className={visiblePlayerBtn?'green serviceBtn':'invisiblePlayerBtn'} onClick={playPause}><img src={playpauseBtn} alt='Play button'/></button></div>
-        <div class="wrap--video">
+             <div className="wrap--videoPlayBtn"><button className={visiblePlayerBtn?'green serviceBtn':'invisiblePlayerBtn'} onClick={playPause}><img src={playpauseBtn} alt='Play button'/></button></div>
+        <div className="wrap--video">
             <video ref={videoref} src={foodVideo} onClick={displayPlayerBtn} className='video'/>
             
         </div>

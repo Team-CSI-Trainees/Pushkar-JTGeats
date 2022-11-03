@@ -37,13 +37,13 @@ function KitchenSection(){
             
                 <div className=''>
                     <h2 className='carouselHeading'>Popular Items</h2>
-                    <div class="wrap--carousel">
+                    <div className="wrap--carousel">
                         <Carousel show={3}>
                             {data}
                         </Carousel>
                     </div>
                     
-                    <div class="wrap--requestBtn"><button className='green' onClick={displayRequestBox} >Request a dish</button></div>
+                    <div className="wrap--requestBtn"><button className='green' onClick={displayRequestBox} >Request a dish</button></div>
                 </div>
             
 
@@ -56,11 +56,11 @@ function KitchenSection(){
                         <label>Name*</label>
                         <InputBox text='Enter name of the dish' class='requestInput' />
                     </div>
-                    <div class="wrap--requestInput">
+                    <div className="wrap--requestInput">
                         <label>Upload an image</label>
                         <InputBox text='Paste a URL' class='requestInput' />
                     </div>
-                    <div class="requestBoxBtn">
+                    <div className="requestBoxBtn">
                         <button  className='requestBtn' onClick={cancelRequest}>Cancel</button>
                         <button className='requestBtn' type='submit'>Submit Request</button>
                     </div>

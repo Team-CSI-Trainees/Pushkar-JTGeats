@@ -4,13 +4,15 @@ import './foodCard.css'
 // import remove from '../images/buttonRemove.svg'
 
 function FoodCard(props){
-
+    const cartData=[];
     const [currentQty,setNewQty] = useState(0);
     const [invisible,setInvisible] = useState(true);
 
     const addDish=()=>{
         setNewQty(currentQty+1);
         setInvisible(false);
+        cartData.push(props);
+        console.log(cartData);
     }
     
     const removeDish=()=>{
@@ -28,11 +30,11 @@ function FoodCard(props){
             <img src={props.location} alt='Food' className='foodImage'></img>
             {/* <div className='discountTag'> 20%</div> */}
             <div className='foodAbout'>
-                <div class="foodAboutDetails">
+                <div className="foodAboutDetails">
                     <p className='foodName'>{props.foodName}</p>
                     <p className='foodPrice'>₹ {props.price} </p>
                 </div>
-                <div class="foodAboutReviews">
+                <div className="foodAboutReviews">
                     <p className='foodRating'>⭐ {props.star}</p>
                     <p className='foodTiming'>{props.arivalTime}</p>
                     <div className={invisible?'dishAmount ':'dishAmount dishAmountBorder'}>

@@ -38,6 +38,12 @@ function NavBar(){
                             <p>Add some items to the cart to checkout</p>
                             <button className='green' onClick={returnToMenu}>Back to Menu</button>
                         </div>
+
+
+                        {/* Cart Data */}
+                        {/* <div>
+                            
+                        </div> */}
                         
                     </div>
 

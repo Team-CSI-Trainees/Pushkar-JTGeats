@@ -8,6 +8,7 @@ import './carousel.css'
 const Carousel =(props)=>{
     const {children, show} = props;
     const [currentIndex, setCurrentIndex] = useState(0)
+    // const [currentShow, setCurrentShow] = useState(show)
     const [length,setLength] = useState(children.length)
     // const [midAnimation,setMidAnimation] = useState(currentIndex)
     const next=()=>{
@@ -21,7 +22,10 @@ const Carousel =(props)=>{
             
         }
     }
-    
+    // const windowWidth= window.innerWidth;
+    // if(windowWidth<=800){
+    //     setCurrentShow(2);
+    // }
     useEffect(()=>{
         setLength(children.length)}
         ,[children])

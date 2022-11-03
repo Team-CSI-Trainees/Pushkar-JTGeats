@@ -5,12 +5,12 @@ import Contact from './Components/contact';
 import Footer from './Components/footer';
 // import NavBar from './Components/navBar';
 // import NavLinks from './Components/navLinks';
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App(){
     return <div>
-{/*         
+        
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Landing />} />
@@ -19,10 +19,10 @@ function App(){
                     <Route path='/contact' element={<Contact />} />
                 
                 </Routes>
-            </BrowserRouter> */}
+            </BrowserRouter>
         
             {/* <NavBar /> */}
-            <Landing />
+            {/* <Landing /> */}
             <KitchenSection />
             <Service />
             <Contact />

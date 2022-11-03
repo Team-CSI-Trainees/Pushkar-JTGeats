@@ -84,7 +84,9 @@
     }
     .headingContent{
         font-size: 3.5rem;
-        width: 80%;
+        width: 100%;
+        margin-top: 2rem;
+        /* text-align: center; */
     }
     .content{
         width: 90%;
@@ -99,5 +101,9 @@
     .heroContent{
        
        padding-left: 2rem;
+    }
+    .headingContent{
+        margin-top: 4rem;
+        width: 100%;
     }
 }
