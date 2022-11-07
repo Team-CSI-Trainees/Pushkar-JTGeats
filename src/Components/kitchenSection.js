@@ -26,6 +26,9 @@ function KitchenSection(){
         e.preventDefault();
     }
 
+
+    
+
     return(
         <div className="wrap--kitchenSection">
             <div className='wrap--kitchen'>

@@ -1,23 +1,48 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './navBar.css';
 import Card from '../images/Card.png';
 import search from '../images/searchIcon.png';
 import logo from '../images/JTGeats.png';
 import emptyCartImage from '../images/shoppingCart.png';
 import NavLinks from './navLinks';
+import {addToCartData} from './imageData';
 
 import React from 'react';
-// import Button from './button';
+import AddedCartItem from './addedCartItem';
+
 
 function NavBar(){
+    
     const [visibleCart,setVisibleCart] = useState(false);  
+    const [itemsPresent,setItemsPresent] = useState(false);  
     const openCart=()=>{
         setVisibleCart(true);
+        // console.log(addToCartData);
     }
     const returnToMenu=()=>{
         setVisibleCart(false);
     }
 
+    // Cart
+    const addCartItem = (props)=>{
+        return(
+            <AddedCartItem foodName={props.foodName} quantity={props.quantity} price={props.price} location={props.location}/>
+        );
+    }
+    const cartItems = addToCartData.map(addCartItem);
+
+    
+    
+    const checkEmpty=()=>{
+        if(addToCartData.length>0)  
+            setItemsPresent(true);
+        else
+            setItemsPresent(false);
+    }
+    useEffect(checkEmpty,[addToCartData.length]);
+
+
+    
     return(
         <div className='navBar'>
             <div className="wrapLogo"><img src={logo} alt='Logo' /></div>
@@ -31,8 +56,10 @@ function NavBar(){
             
             <div className={visibleCart?'blurBackground':'requestInvisible'}>
                 <section className={visibleCart?'wrap--cart':'requestInvisible wrap--cart'}>
-                    <div className="wrapCartBox">
-                        <div className="wrap--emptyCart">
+                    <div className={itemsPresent?'wrapCartBoxFull':"wrapCartBoxEmpty"}>
+
+
+                        <div className={itemsPresent?'requestInvisible':"wrap--emptyCart"}>
                             <img src={emptyCartImage} alt='cart empty' className='emptyCartImage' />
                             <h3>Cart is Empty</h3>
                             <p>Add some items to the cart to checkout</p>
@@ -41,9 +68,19 @@ function NavBar(){
 
 
                         {/* Cart Data */}
-                        {/* <div>
-                            
-                        </div> */}
+                        
+                        <div className={itemsPresent?'':'requestInvisible'}>
+                            <button className='green' onClick={returnToMenu}>Back to Menu</button>
+                                <div className='cart--heading'>
+                                    <p>Dish Image</p>
+                                    <p>Dish Name</p>
+                                    <p>Quantity</p>
+                                    <p>Price</p>
+                                </div>
+                            <div className='wrap--cartItems'>
+                                {cartItems}
+                            </div>
+                        </div>
                         
                     </div>
 

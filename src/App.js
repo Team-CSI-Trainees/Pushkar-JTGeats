@@ -3,6 +3,7 @@ import Landing from './Components/landing';
 import Service from './Components/service';
 import Contact from './Components/contact';
 import Footer from './Components/footer';
+import AddedCartItem from './Components/addedCartItem';
 // import NavBar from './Components/navBar';
 // import NavLinks from './Components/navLinks';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -27,6 +28,7 @@ function App(){
             <Service />
             <Contact />
             <Footer />
+            {/* <AddedCartItem /> */}
         </div>;
     
 }
