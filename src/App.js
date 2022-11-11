@@ -14,14 +14,15 @@ function App(){
         
            <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={Landing} exact />
-                    <Route path="/kitchenSection" element={KitchenSection} exact />
-                    <Route path="/service" element={Service} exact />
-                    <Route path="/contact" element={Contact} exact />
+                    <Route path="/" element={<Landing/>} exact />
+                    <Route path="/kitchenSection" element={<KitchenSection/>} exact />
+                    <Route path="/service" element={<Service/>} exact />
+                    <Route path="/contact" element={<Contact/>} exact />
                 </Routes>
                 <Landing />
                 <KitchenSection />
                 <Service />
+                <Contact />
                 <Footer />
            </BrowserRouter>
         </div>;
