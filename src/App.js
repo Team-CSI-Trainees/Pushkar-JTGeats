@@ -14,10 +14,10 @@ function App(){
         
            <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Landing/>} exact />
-                    <Route path="/kitchenSection" element={<KitchenSection/>} exact />
-                    <Route path="/service" element={<Service/>} exact />
-                    <Route path="/contact" element={<Contact/>} exact />
+                    <Route path="/Pushkar-JTGeats/" element={<Landing/>} exact />
+                    <Route path="/Pushkar-JTGeats/kitchenSection" element={<KitchenSection/>} exact />
+                    <Route path="/Pushkar-JTGeats/service" element={<Service/>} exact />
+                    <Route path="/Pushkar-JTGeats/contact" element={<Contact/>} exact />
                 </Routes>
                 {/* <Landing /> */}
                 {/* <KitchenSection />

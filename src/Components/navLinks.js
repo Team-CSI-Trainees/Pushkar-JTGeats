@@ -6,10 +6,10 @@ const navLinks = (props) => {
 
   return (
     <div className={props.class}>
-        <NavLink to='/'><span>Home</span></NavLink>
-        <NavLink to='/kitchenSection'><span>About</span></NavLink>
-        <NavLink to='/service'><span>Menu</span></NavLink>
-        <NavLink to='/contact'><span>Contact</span></NavLink>
+        <NavLink to='/Pushkar-JTGeats/'><span>Home</span></NavLink>
+        <NavLink to='/Pushkar-JTGeats/kitchenSection'><span>About</span></NavLink>
+        <NavLink to='/Pushkar-JTGeats/service'><span>Menu</span></NavLink>
+        <NavLink to='/Pushkar-JTGeats/contact'><span>Contact</span></NavLink>
     </div>
   )
 }
