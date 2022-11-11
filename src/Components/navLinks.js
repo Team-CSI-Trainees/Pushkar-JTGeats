@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const navLinks = () => {
+
+const navLinks = (props) => {
+
   return (
-    <div className='list'>
+    <div className={props.class}>
         <NavLink to='/'><span>Home</span></NavLink>
         <NavLink to='/kitchenSection'><span>About</span></NavLink>
         <NavLink to='/service'><span>Menu</span></NavLink>

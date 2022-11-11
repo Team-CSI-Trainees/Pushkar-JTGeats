@@ -6,15 +6,19 @@ import logo from '../images/JTGeats.png';
 import emptyCartImage from '../images/shoppingCart.png';
 import NavLinks from './navLinks';
 import {addToCartData} from './imageData';
-
 import React from 'react';
 import AddedCartItem from './addedCartItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+// import closedMenu from '../images/menuClosed.svg'
 
 
 function NavBar(){
     
     const [visibleCart,setVisibleCart] = useState(false);  
     const [itemsPresent,setItemsPresent] = useState(false);  
+    const [OpenMenu,setOpenMenu]=useState(false);
     const openCart=()=>{
         setVisibleCart(true);
         // console.log(addToCartData);
@@ -45,10 +49,13 @@ function NavBar(){
     
     return(
         <div className='navBar'>
-            <div className="wrapLogo"><img src={logo} alt='Logo' /></div>
-            <NavLinks/>
+            <div className="wrapLogo" ><img src={logo} alt='Logo' /></div>
+            {/* <div className= {OpenMenu ?"" :'requestInvisible'}><NavLinks class='navLinks list'/></div> */}
+            <NavLinks class='footer--navLinks'/>
             
             <div className='list'>
+          {/* <FontAwesomeIcon  icon={faBars} className={OpenMenu ?"requestInvisible" :'menu marginRight'} onClick={() => setOpenMenu(true)}/>
+          <FontAwesomeIcon  icon={faXmark}  className={OpenMenu ?"menu marginRight" :"requestInvisible"} onClick={() => setOpenMenu(false)}/> */}
             <a href="https://www.google.com"><span> <img src={search} alt='search' className='iconHeader searchIcon'></img></span></a>
             <button onClick={openCart} className='green cartOpenBtn'><img src={Card} alt='shop' className='iconHeader shopIcon noRightMargin'></img></button>
             </div>

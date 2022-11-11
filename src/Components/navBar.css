@@ -8,18 +8,24 @@
     /* background: var(--color-header); */
     font-size: 1.8rem;
 }
-.list{
+.list , .navLinks{
     text-align: center;
     display: flex;
 }
-.list a{
+.list a, .navLinks a{
     color: var(--color-text);
     margin-right: 4rem ;
     font-size: large;
     text-decoration: none;
     justify-content: center;
 }
+.footer--navLinks a{
+    margin-right: 4rem ;
+    color: var(--color-text);
+    justify-content: center;
+    text-decoration: none;
 
+}
 .wrapLogo img{
     width: 8.9rem;
     /* height: 110%; */
@@ -41,8 +47,19 @@
 }
 
 
-
-
+/* Nav Link */
+.menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.marginRight{
+    margin-right: 2rem;
+}
+/* .hideBars{
+    displ
+} */
 
 
 
@@ -125,6 +142,36 @@
 
 
 /* media queries */
-/* @media screen and (min-width:){ */
-    
-/* } */
+@media screen and (max-width:767px){
+    .menu{
+        display: inline-block;
+    }
+    .closedMenu{
+        display: block;
+    }
+
+    .wrap--navLinks{
+        /* background-color: red; */
+        /* z-index: 10000000; */
+        color: var(--color-text);
+        margin-top: 4rem;
+        height: 100vh;
+        width: 100vw;
+    }
+    .navLinks{
+        flex-direction: column;
+    } 
+    .footer--navLinks a{
+        margin-right: 2rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .footer--navLinks a{
+        margin-right: 1rem;
+    }
+    .list a{
+        margin-right: 2rem;
+    }
+}

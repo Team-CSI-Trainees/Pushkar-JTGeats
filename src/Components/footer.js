@@ -18,7 +18,9 @@ function Footer(){
         <a href="#blog"><span>Blog</span></a>
         <a href="#contact"><span className='noRightMargin'>Contact</span></a>
     </div> */}
-    <NavLinks />
+    <div>
+        <NavLinks class='footer--navLinks'/>
+    </div>
     
     <div className='footerList'>
         <a href=""><span><img src={fb} alt='shop' className='iconFooter fb noRightMargin'></img></span></a>

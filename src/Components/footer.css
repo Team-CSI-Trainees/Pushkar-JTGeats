@@ -50,3 +50,11 @@ hr{
 .fb{
     padding: 0.6rem 1rem;
 }
+
+
+
+/* @media screen and (min-width:767px) {
+    .links{
+        width: 2rem;
+    }
+} */
