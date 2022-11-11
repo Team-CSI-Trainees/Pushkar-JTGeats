@@ -19,8 +19,8 @@ function App(){
                     <Route path="/service" element={<Service/>} exact />
                     <Route path="/contact" element={<Contact/>} exact />
                 </Routes>
-                {/* <Landing />
-                <KitchenSection />
+                {/* <Landing /> */}
+                {/* <KitchenSection />
                 <Service />
                 <Contact /> */}
                 <Footer />
