@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Pushkar-JTGeats/static/css/main.e9bd78c4.css",
+    "main.js": "/Pushkar-JTGeats/static/js/main.2d7384d8.js",
+    "static/media/dish1.png": "/Pushkar-JTGeats/static/media/dish1.9ddde83c5d5baf3f0d79.png",
+    "static/media/dish2.png": "/Pushkar-JTGeats/static/media/dish2.9457da80a25bab277f0a.png",
+    "static/media/pizza7.png": "/Pushkar-JTGeats/static/media/pizza7.fd82522613e107b8e626.png",
+    "static/media/pizza2.png": "/Pushkar-JTGeats/static/media/pizza2.20ee90e414b1c22e0dc7.png",
+    "static/media/pizza5.png": "/Pushkar-JTGeats/static/media/pizza5.eb61dd87d5d8208f8eb2.png",
+    "static/media/pizza8.png": "/Pushkar-JTGeats/static/media/pizza8.07f2b5e442a34847b85e.png",
+    "static/media/pizza1.png": "/Pushkar-JTGeats/static/media/pizza1.d9969eff61d90aa1ba8a.png",
+    "static/media/pizza3.png": "/Pushkar-JTGeats/static/media/pizza3.ae305c15392d0d5efe86.png",
+    "static/media/foodVideo.mp4": "/Pushkar-JTGeats/static/media/foodVideo.01a59e1152b9923375b7.mp4",
+    "static/media/pizza6.png": "/Pushkar-JTGeats/static/media/pizza6.8f4df0b8422bac72e65b.png",
+    "static/media/pizza4.png": "/Pushkar-JTGeats/static/media/pizza4.db46e4b2b1bb824d5faf.png",
+    "static/media/foodDelivery.png": "/Pushkar-JTGeats/static/media/foodDelivery.f9e85b5f2c8c4c940354.png",
+    "static/media/cuate.png": "/Pushkar-JTGeats/static/media/cuate.44fdb858cea7360f1acf.png",
+    "index.html": "/Pushkar-JTGeats/index.html",
+    "main.e9bd78c4.css.map": "/Pushkar-JTGeats/static/css/main.e9bd78c4.css.map",
+    "main.2d7384d8.js.map": "/Pushkar-JTGeats/static/js/main.2d7384d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9bd78c4.css",
+    "static/js/main.2d7384d8.js"
+  ]
+}
