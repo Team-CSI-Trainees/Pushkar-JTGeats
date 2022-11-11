@@ -9,7 +9,8 @@ import NavLinks from "./navLinks";
 
 
 function Footer(){
-    return(<div className='footerBar'>
+    return(
+    <div className='footerBar'>
     <div className="wrapLogo"><img src={logo} alt='Logo' /></div>
     {/* <div className='list'>
         <a href="#home"><span className='leftMargin'>Home</span></a>
