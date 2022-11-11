@@ -19,10 +19,10 @@ function App(){
                     <Route path="/service" element={<Service/>} exact />
                     <Route path="/contact" element={<Contact/>} exact />
                 </Routes>
-                <Landing />
+                {/* <Landing />
                 <KitchenSection />
                 <Service />
-                <Contact />
+                <Contact /> */}
                 <Footer />
            </BrowserRouter>
         </div>;
