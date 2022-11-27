@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pushkar-JTGeats/static/css/main.e9bd78c4.css",
-    "main.js": "/Pushkar-JTGeats/static/js/main.87013979.js",
+    "main.css": "/Pushkar-JTGeats/static/css/main.34fec000.css",
+    "main.js": "/Pushkar-JTGeats/static/js/main.249765fe.js",
     "static/media/dish1.png": "/Pushkar-JTGeats/static/media/dish1.9ddde83c5d5baf3f0d79.png",
     "static/media/dish2.png": "/Pushkar-JTGeats/static/media/dish2.9457da80a25bab277f0a.png",
     "static/media/pizza7.png": "/Pushkar-JTGeats/static/media/pizza7.fd82522613e107b8e626.png",
@@ -16,11 +16,11 @@
     "static/media/foodDelivery.png": "/Pushkar-JTGeats/static/media/foodDelivery.f9e85b5f2c8c4c940354.png",
     "static/media/cuate.png": "/Pushkar-JTGeats/static/media/cuate.44fdb858cea7360f1acf.png",
     "index.html": "/Pushkar-JTGeats/index.html",
-    "main.e9bd78c4.css.map": "/Pushkar-JTGeats/static/css/main.e9bd78c4.css.map",
-    "main.87013979.js.map": "/Pushkar-JTGeats/static/js/main.87013979.js.map"
+    "main.34fec000.css.map": "/Pushkar-JTGeats/static/css/main.34fec000.css.map",
+    "main.249765fe.js.map": "/Pushkar-JTGeats/static/js/main.249765fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9bd78c4.css",
-    "static/js/main.87013979.js"
+    "static/css/main.34fec000.css",
+    "static/js/main.249765fe.js"
   ]
 }
