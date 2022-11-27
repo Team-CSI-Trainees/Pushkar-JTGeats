@@ -5,8 +5,10 @@ const AddedCartItem=(props)=>{
     
     return(
         <div className='wrap--cartFoodItem'>
-            <img src={props.location} alt={props.name}/>
-            <p>{props.foodName}</p>
+            <span>
+                <img src={props.location} alt={props.name}/>
+                <p>{props.foodName}</p>
+            </span>
             <p>{props.quantity}</p>
             <p>{(props.quantity)*(props.price)}</p>
         </div>

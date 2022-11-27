@@ -18,7 +18,7 @@ function NavBar(){
     
     const [visibleCart,setVisibleCart] = useState(false);  
     const [itemsPresent,setItemsPresent] = useState(false);  
-    const [OpenMenu,setOpenMenu]=useState(false);
+    // const [OpenMenu,setOpenMenu]=useState(false);
     const openCart=()=>{
         setVisibleCart(true);
         // console.log(addToCartData);
@@ -79,9 +79,10 @@ function NavBar(){
                         <div className={itemsPresent?'':'requestInvisible'}>
                             <button className='green' onClick={returnToMenu}>Back to Menu</button>
                                 <div className='cart--heading'>
-                                    <p>Dish Image</p>
-                                    <p>Dish Name</p>
-                                    <p>Quantity</p>
+                                    {/* <p>Dish Image</p> */}
+                                    {/* <p>Dish Name</p> */}
+                                    <p>Dish </p>
+                                    <p>Qty</p>
                                     <p>Price</p>
                                 </div>
                             <div className='wrap--cartItems'>

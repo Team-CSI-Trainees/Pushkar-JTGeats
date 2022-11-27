@@ -126,10 +126,11 @@
 
 
 .cart--heading{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* justify-content: center; */
     margin: 0 auto;
-    font-size: 4rem;
+    font-size: 2rem;
     width: 80%;
 }
 .cart--heading p{
@@ -164,6 +165,9 @@
     .footer--navLinks a{
         margin-right: 2rem;
     }
+    .cart--heading{
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -174,6 +178,9 @@
     }
     .list a{
         margin-right: 2rem;
+    }
+    .cart--heading{
+        font-size: 1.2rem;
     }
 }
 
