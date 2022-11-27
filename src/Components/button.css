@@ -37,3 +37,12 @@ button{
         padding: 1rem 1.6rem;
     }
 }
+
+@media screen and (max-width:372px) {
+    .accent{
+        border-bottom-left-radius: 9px;
+        border-top-left-radius: 9px;
+        margin-top: 1rem;
+        /* border: 1px solid; */
+    }
+}

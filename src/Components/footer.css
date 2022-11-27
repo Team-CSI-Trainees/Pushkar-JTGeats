@@ -58,3 +58,12 @@ hr{
         width: 2rem;
     }
 } */
+
+@media screen and (max-width:376px) {
+    .footer--navLinks a{
+        font-size: 1.2rem;
+    }
+    .wrapLogo img{
+        width: 6.5rem;
+    }
+}

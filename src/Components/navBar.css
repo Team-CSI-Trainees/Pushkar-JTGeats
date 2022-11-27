@@ -26,10 +26,10 @@
     text-decoration: none;
 
 }
-.wrapLogo img{
+/* .wrapLogo img{
     width: 8.9rem;
-    /* height: 110%; */
-}
+    height: 110%;
+} */
 
 .searchIcon , .shopIcon{
     margin-right: 2vw;
@@ -170,8 +170,21 @@
 @media screen and (max-width:500px) {
     .footer--navLinks a{
         margin-right: 1rem;
+        font-size: 1.3rem;
     }
     .list a{
         margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .footer--navLinks a{
+        font-size: 1.2rem;
+    }
+    .wrapLogo img{
+        width: 2rem;
+    }
+    .list a{
+        font-size: medium;
     }
 }

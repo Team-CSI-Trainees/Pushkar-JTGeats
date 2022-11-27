@@ -8,9 +8,9 @@ import NavLinks from './navLinks';
 import {addToCartData} from './imageData';
 import React from 'react';
 import AddedCartItem from './addedCartItem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { faXmark } from '@fortawesome/free-solid-svg-icons';
 // import closedMenu from '../images/menuClosed.svg'
 
 

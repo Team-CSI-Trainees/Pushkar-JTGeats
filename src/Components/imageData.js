@@ -111,9 +111,8 @@ const imageData = [{
 export const addToCartData = [];
 
 function addMenuItems(props){
-    // const [checkId,setSameId] = useState(false);
-    const checkId = false;
-    // Function for cart functionality
+    // Function for add to cart functionality
+    let checkId = false;
     const cartDataHandler=(addedCartData)=>{
         
         const cartData={
@@ -122,28 +121,74 @@ function addMenuItems(props){
             price: addedCartData.price,
             quantity: addedCartData.qty,
             id : addedCartData.id
-        }
-        // console.log(cartData);
-        for (let index=0;index<addToCartData.length;index++){
-            if(addToCartData[index].id === cartData.id){
-                addToCartData[index].qty = addedCartData.qty;
-                // if(checkId ===false)
-                //     checkId= true;
-                // console.log('yay');
-                // addToCartData.push(cartData);
-            }
-                // setSameId(true);
-        }
-        if(checkId===false)
-            addToCartData.push(cartData);
-        // addToCartData.map((oneFoodItem)=>{
-        //     if(oneFoodItem.id)
-        // })
+        };
+        // console.log('in function cartDataHandler',cartData);
+        if(addToCartData.length!==0){
+            // console.log('checking if');
+            checkId= false;
+            for (let index=0;index<addToCartData.length;index++){
+                // console.log('checking if for',cartData);
+                if(cartData.id === addToCartData[index].id){
+                    // console.log('checking if for if');
+                    addToCartData.splice(index,1);
+                    addToCartData.push(cartData);
+                    console.log('added');
+                    checkId = true;
+                    break;
+                }
 
-        
+                // setSameId(true);
+            }
+            if(checkId===false)
+            {
+                addToCartData.push(cartData);
+                console.log('else 1st wala');
+                // break;
+            }
+        }
+        else
+            addToCartData.push(cartData);
     }
+
+    // Removing cart data
+    const removeCartData = (removedCartData)=>{
+        const removeCartDataObj={
+            location:removedCartData.location,
+            foodName:removedCartData.foodName,
+            price: removedCartData.price,
+            quantity: (removedCartData.qty - 2),
+            id : removedCartData.id
+        };
+        
+        for (let index=0;index<addToCartData.length;index++){
+            if(removeCartDataObj.id===addToCartData[index].id){
+                console.log('found it',removeCartDataObj.quantity);
+
+                if(removeCartDataObj.quantity>0){
+                    addToCartData.splice(index,1);
+                    addToCartData.push(removeCartDataObj);
+                    break;
+                }
+                else
+                    addToCartData.splice(index,1);              
+            }
+        }
+    }
+        // if(removeCartDataObj.quantity===1){
+        // else{
+        //     for (let index=0;index<addToCartData.length;index++){
+        //         if(removeCartDataObj.id===addToCartData[index].id){
+        //             addToCartData.splice(index,1);
+        //             break;
+        //         }
+        //     }
+
+        // }
+
+    
+
     return(<div>
-         <FoodCard location={props.location} id={props.id} foodName={props.foodName} price={props.price} star={props.star} arivalTime={props.arivalTime} addCartDataHandler={cartDataHandler}/>
+         <FoodCard location={props.location} id={props.id} foodName={props.foodName} price={props.price} star={props.star} arivalTime={props.arivalTime} addCartDataHandler={cartDataHandler} removeCartDataHandler={removeCartData}/>
         </div>);
 }
 

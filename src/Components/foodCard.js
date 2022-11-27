@@ -12,7 +12,7 @@ function FoodCard(props){
     }
 
     const addDish=()=>{
-        console.log(cartDataObj);
+        // console.log(cartDataObj);
         
         setNewQty(currentQty+1);
         // cartDataObj.qty = currentQty;
@@ -22,9 +22,10 @@ function FoodCard(props){
     
     const removeDish=()=>{
         // setNewQty(currentQty-1);
-        if(currentQty>0){
+        if(currentQty>1){
             setNewQty(currentQty-1);
             console.log(cartDataObj);
+            props.removeCartDataHandler(cartDataObj);
             // console.log(currentQty);
         }
         if((currentQty-1)===1){

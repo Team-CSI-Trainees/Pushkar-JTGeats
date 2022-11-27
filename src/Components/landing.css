@@ -107,3 +107,10 @@
         width: 100%;
     }
 }
+@media screen and (max-width:372px) {
+    .inputBoxLanding{
+        border-bottom-right-radius: 9px;
+        border-top-right-radius: 9px;
+    }
+    
+}
